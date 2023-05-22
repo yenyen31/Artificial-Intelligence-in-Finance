@@ -4,8 +4,8 @@ Artificial-Intelligence-in-Finance
 
 
 2023.5~
-
 python 3.10 
 
 1일 1commit, 1주 1지식 블로그 업로드
+
 https://yenyen31.tistory.com/category/DeepLearning 
