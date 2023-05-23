@@ -60,7 +60,7 @@ model = Sequential()
 model.add(Dense(100, input_dim=2, activation="relu"))
 model.add(Dense(30))
 model.add(Dense(5))
-model.add(Dense(1))
+model.add(Dense(2))
 
 # 3. 훈련하기
 model.compile(
