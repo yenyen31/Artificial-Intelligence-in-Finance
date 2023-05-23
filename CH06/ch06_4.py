@@ -5,7 +5,7 @@ import numpy as np
 # 1~7까지의 데이터와 11~17데이터로 훈련을 시킨 다음, 8,9,10과 18,19,20을 이용해 평가
 # 그리고 21,22,23과 31,32,33이 잘 예측되는 지 확인하는 모델 만들기
 x_train = np.array(
-    [
+    
         [
             1,
             2,
@@ -14,9 +14,9 @@ x_train = np.array(
             5,
             6,
             7,
-        ],
-        [11, 12, 13, 14, 15, 16, 17],
-    ]
+        ]
+        
+    
 )
 y_train = np.array(
     [
@@ -29,7 +29,7 @@ y_train = np.array(
             6,
             7,
         ],
-        [11, 12, 13, 14, 15, 16, 17],
+        [11, 12, 13, 14, 15, 16, 17]
     ]
 )
 
@@ -50,14 +50,14 @@ from keras.layers import Dense
 
 model = Sequential()
 
-model.add(Dense(100, input_dim=2, activation="relu"))
+model.add(Dense(100, input_dim=1, activation='relu'))
 model.add(Dense(30))
 model.add(Dense(5))
-model.add(Dense(1))
+model.add(Dense(2))
 
 # 3. 훈련하기
 model.compile(
-    loss="mse", optimizer="adam", metrics=["mse"]
+    loss='mse', optimizer='adam', metrics=['mse']
 )  # loss는 mse로 설정해 최저 손실 값 구하기
 model.fit(x_train, y_train, epochs=100, batch_size=1)  # 100번 훈련시키고, 배치 사이즈는 1개씩 잘라 사용하기
 
