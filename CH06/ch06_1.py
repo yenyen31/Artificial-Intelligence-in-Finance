@@ -1,3 +1,4 @@
+# Sequential 1:1 모델
 # 1. 데이터
 import numpy as np
 
@@ -27,7 +28,7 @@ y_train = np.array(
 x_test = np.array([8, 9, 10])
 y_test = np.array([8, 9, 10])
 
-x_predict = np.array([11, 12, 13]) # *** 여기서 오류 발생해서 책과 다르게 코드 수정함!!
+x_predict = np.array([11, 12, 13]) # 트러블 슈팅 *** 책과 다르게 수정한 부분 ***
 
 # 2. 모델 구성
 from keras.models import Sequential
