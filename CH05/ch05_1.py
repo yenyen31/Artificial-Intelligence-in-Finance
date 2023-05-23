@@ -8,12 +8,12 @@ import numpy as np
 x1 = np.array([range(100), range(311, 411), range(100)])
 x2 = np.array([range(101, 201), range(311, 411), range(101, 201)])
 
-y = np.array([range(501, 600)])  # , range(711,811), range(100)])
+y = np.array([range(500, 601)])
 
 # 현재 shape은 (3,100)이므로 (100,3)으로 reshape 해주기
 x1 = np.transpose(x1)
-x2 = np.transpose(y)
-y = np.transpose(x2)
+y = np.transpose(y)
+x2 = np.transpose(x2)
 
 # train, test, validation 을 분리하기
 from sklearn.model_selection import train_test_split
