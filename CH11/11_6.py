@@ -1,3 +1,4 @@
+# 6. 완성된 삼성전자 DNN 모델 활용해 LSTM 모델 구성하기
 import numpy as np
 import pandas as pd
 
